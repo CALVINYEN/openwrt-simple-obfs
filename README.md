@@ -7,9 +7,9 @@ Simple-obfs for OpenWrt
  - 从 OpenWrt 的 [SDK][S] 编译
 
    ```bash
-   # 以 ar71xx 平台为例
-   tar xjf OpenWrt-SDK-ar71xx-for-linux-x86_64-gcc-4.8-linaro_uClibc-0.9.33.2.tar.bz2
-   cd OpenWrt-SDK-ar71xx-*
+   # xiaoMi router 3G 设备为例, MTK mt7621
+   wget https://downloads.openwrt.org/releases/19.07.2/targets/ramips/mt7621/openwrt-sdk-19.07.2-ramips-mt7621_gcc-7.5.0_musl.Linux-x86_64.tar.xz
+   xz -d openwrt-sdk-19.07.2-ramips-mt7621_gcc-7.5.0_musl.Linux-x86_64.tar.xz && tar vxf openwrt-sdk-19.07.2-ramips-mt7621_gcc-7.5.0_musl.Linux-x86_64.tar
    # 添加 feeds
    git clone https://github.com/shadowsocks/openwrt-feeds.git package/feeds
    # 获取 simple-obfs Makefile
